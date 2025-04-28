@@ -60,7 +60,7 @@ QR 코드 기반 위치 인식과 경량화된 VIO 알고리즘을 이용한 실
 ---
 
 ## Reference
-
+- [ARKit - ARCore - Indoor Navigation](https://www.youtube.com/watch?v=H5utsMbeNuw&list=PLHYDWlZPYhLI0JM-3gsFFq3x0laxhzbTL)
 ---
 
 ## Notion link
