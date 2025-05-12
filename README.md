@@ -64,4 +64,4 @@ QR 코드 기반 위치 인식과 경량화된 VIO 알고리즘을 이용한 실
 ---
 
 ## Notion link
-<https://www.notion.so/Indoor-AR-Navigation-1baa9983848e8034b9aadffceed62a20>
+https://www.notion.so/Indoor-AR-Navigation-Project-1f11c888d21a80389b3bcf9e26117dd2?pvs=4 
