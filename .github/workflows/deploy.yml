@@ -32,7 +32,7 @@ jobs:
 
     - name: Build and Push Docker image
       run: |
-        IMAGE=${{ env.GKE_ZONE }}-docker.pkg.dev/${{ env.GKE_PROJECT }}/${{ env.GKE_PROJECT }}/$GKE_APP_NAME:${{ github.sha }}
+        IMAGE=${{ env.GKE_ZONE }}-docker.pkg.dev/${{ env.GKE_PROJECT }}/cloud-app/${{ env.GKE_APP_NAME }}:${{ github.sha }}
         docker build -t $IMAGE .
         docker push $IMAGE
         echo "IMAGE=$IMAGE" >> $GITHUB_ENV
