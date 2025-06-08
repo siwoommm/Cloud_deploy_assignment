@@ -28,14 +28,15 @@ jobs:
 
     - name: Authenticate Docker
       run: |
-        gcloud auth configure-docker ${{ env.GKE_ZONE }}-docker.pkg.dev --quiet
-
+        gcloud auth configure-docker asia-northeast3-docker.pkg.dev --quiet
+    
     - name: Build and Push Docker image
       run: |
-        IMAGE=${{ env.GKE_ZONE }}-docker.pkg.dev/${{ env.GKE_PROJECT }}/cloud-app/${{ env.GKE_APP_NAME }}:${{ github.sha }}
+        IMAGE=asia-northeast3-docker.pkg.dev/${{ env.GKE_PROJECT }}/cloud-app/${{ env.GKE_APP_NAME }}:${{ github.sha }}
         docker build -t $IMAGE .
         docker push $IMAGE
         echo "IMAGE=$IMAGE" >> $GITHUB_ENV
+
 
     - name: Get GKE credentials
       uses: google-github-actions/get-gke-credentials@v0.2.1
